@@ -4,7 +4,7 @@
 #include <ruby.h>
 #include <assert.h>
 
-#include "vendor/readtags.h"
+#include "readtags.h"
 
 typedef struct {
     tagFile *file;
