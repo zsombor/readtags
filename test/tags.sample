@@ -1,0 +1,157 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+EmptyString	ext/tags/vendor/readtags.c	/^const char *const EmptyString = "";$/;"	v
+File	lib/tags/file.rb	/^  class File$/;"	c	class:Tags
+Init_readtags	ext/tags/tags.c	/^void Init_readtags()$/;"	f
+Init_tags_file	ext/tags/tags_file.c	/^void Init_tags_file()$/;"	f
+JUMP_BACK	ext/tags/vendor/readtags.c	/^#define JUMP_BACK /;"	d	file:
+ProgramName	ext/tags/vendor/readtags.c	/^static const char *ProgramName;$/;"	v	file:
+PseudoTagPrefix	ext/tags/vendor/readtags.c	/^const char *const PseudoTagPrefix = "!_";$/;"	v
+READTAGS_H	ext/tags/vendor/readtags.h	/^#define READTAGS_H$/;"	d
+SortMethod	ext/tags/vendor/readtags.c	/^static sortType SortMethod;$/;"	v	file:
+SortOverride	ext/tags/vendor/readtags.c	/^static int SortOverride;$/;"	v	file:
+TAB	ext/tags/vendor/readtags.c	/^#define TAB /;"	d	file:
+TAG_FOLDSORTED	ext/tags/vendor/readtags.h	/^	TAG_UNSORTED, TAG_SORTED, TAG_FOLDSORTED$/;"	e	enum:__anon6
+TAG_FULLMATCH	ext/tags/vendor/readtags.h	/^#define TAG_FULLMATCH /;"	d
+TAG_IGNORECASE	ext/tags/vendor/readtags.h	/^#define TAG_IGNORECASE /;"	d
+TAG_OBSERVECASE	ext/tags/vendor/readtags.h	/^#define TAG_OBSERVECASE /;"	d
+TAG_PARTIALMATCH	ext/tags/vendor/readtags.h	/^#define TAG_PARTIALMATCH /;"	d
+TAG_SORTED	ext/tags/vendor/readtags.h	/^	TAG_UNSORTED, TAG_SORTED, TAG_FOLDSORTED$/;"	e	enum:__anon6
+TAG_UNSORTED	ext/tags/vendor/readtags.h	/^	TAG_UNSORTED, TAG_SORTED, TAG_FOLDSORTED$/;"	e	enum:__anon6
+TagFailure	ext/tags/vendor/readtags.h	/^typedef enum { TagFailure = 0, TagSuccess = 1 } tagResult;$/;"	e	enum:__anon7
+TagFileName	ext/tags/vendor/readtags.c	/^static const char *TagFileName = "tags";$/;"	v	file:
+TagSuccess	ext/tags/vendor/readtags.h	/^typedef enum { TagFailure = 0, TagSuccess = 1 } tagResult;$/;"	e	enum:__anon7
+Tags	lib/tags/file.rb	/^module Tags$/;"	m
+TagsExtnTest	test/tags_ext_test.rb	/^class TagsExtnTest < Test::Unit::TestCase$/;"	c
+TagsFileTest	test/tags_file_test.rb	/^class TagsFileTest < Test::Unit::TestCase$/;"	c
+Usage	ext/tags/vendor/readtags.c	/^const char *const Usage =$/;"	v
+__TAGS_RUBY_EXT_H___	ext/tags/tags_ext.h	/^#define __TAGS_RUBY_EXT_H___$/;"	d
+address	ext/tags/vendor/readtags.h	/^	} address;$/;"	m	struct:__anon13	typeref:struct:__anon13::__anon14
+author	ext/tags/vendor/readtags.c	/^		char *author;$/;"	m	struct:sTagFile::__anon5	file:
+author	ext/tags/vendor/readtags.h	/^		const char *author;$/;"	m	struct:__anon8::__anon11
+buffer	ext/tags/vendor/readtags.c	/^	char *buffer;$/;"	m	struct:__anon2	file:
+copyName	ext/tags/vendor/readtags.c	/^static void copyName (tagFile *const file)$/;"	f	file:
+count	ext/tags/vendor/readtags.h	/^		unsigned short count;$/;"	m	struct:__anon13::__anon15
+duplicate	ext/tags/vendor/readtags.c	/^static char *duplicate (const char *str)$/;"	f	file:
+each	lib/tags/file.rb	/^    def each(name, options = { }, &block)$/;"	f	class:Tags.File
+entry	ext/tags/tags_ext.h	/^    tagEntry entry;$/;"	m	struct:__anon1
+error_number	ext/tags/vendor/readtags.h	/^		int error_number;$/;"	m	struct:__anon8::__anon9
+extensionFields	ext/tags/vendor/readtags.c	/^static int extensionFields;$/;"	v	file:
+fields	ext/tags/vendor/readtags.c	/^	} fields;$/;"	m	struct:sTagFile	typeref:struct:sTagFile::__anon4	file:
+fields	ext/tags/vendor/readtags.h	/^	} fields;$/;"	m	struct:__anon13	typeref:struct:__anon13::__anon15
+file	ext/tags/tags_ext.h	/^    tagFile *file;$/;"	m	struct:__anon1
+file	ext/tags/vendor/readtags.h	/^	const char *file;$/;"	m	struct:__anon13
+file	ext/tags/vendor/readtags.h	/^	} file;$/;"	m	struct:__anon8	typeref:struct:__anon8::__anon10
+fileScope	ext/tags/vendor/readtags.h	/^	short fileScope;$/;"	m	struct:__anon13
+file_name	ext/tags/tags_ext.h	/^    VALUE file_name;$/;"	m	struct:__anon1
+find	ext/tags/vendor/readtags.c	/^static tagResult find (tagFile *const file, tagEntry *const entry,$/;"	f	file:
+find	lib/tags/file.rb	/^    def self.find(name, in_file, options = { })$/;"	F	class:Tags.File
+findBinary	ext/tags/vendor/readtags.c	/^static tagResult findBinary (tagFile *const file)$/;"	f	file:
+findFirstMatchBefore	ext/tags/vendor/readtags.c	/^static tagResult findFirstMatchBefore (tagFile *const file)$/;"	f	file:
+findFirstNonMatchBefore	ext/tags/vendor/readtags.c	/^static void findFirstNonMatchBefore (tagFile *const file)$/;"	f	file:
+findNext	ext/tags/vendor/readtags.c	/^static tagResult findNext (tagFile *const file, tagEntry *const entry)$/;"	f	file:
+findSequential	ext/tags/vendor/readtags.c	/^static tagResult findSequential (tagFile *const file)$/;"	f	file:
+findTag	ext/tags/vendor/readtags.c	/^static void findTag (const char *const name, const int options)$/;"	f	file:
+flags	ext/tags/tags_ext.h	/^    int flags;$/;"	m	struct:__anon1
+format	ext/tags/vendor/readtags.c	/^	short format;$/;"	m	struct:sTagFile	file:
+format	ext/tags/vendor/readtags.h	/^			short format;$/;"	m	struct:__anon8::__anon10
+format_tag_entry	ext/tags/tags_file.c	/^static VALUE format_tag_entry(tag_file *tags)$/;"	f	file:
+fp	ext/tags/vendor/readtags.c	/^	FILE* fp;$/;"	m	struct:sTagFile	file:
+gotoFirstLogicalTag	ext/tags/vendor/readtags.c	/^static void gotoFirstLogicalTag (tagFile *const file)$/;"	f	file:
+growFields	ext/tags/vendor/readtags.c	/^static tagResult growFields (tagFile *const file)$/;"	f	file:
+growString	ext/tags/vendor/readtags.c	/^static int growString (vstring *s)$/;"	f	file:
+ignorecase	ext/tags/vendor/readtags.c	/^			short ignorecase;$/;"	m	struct:sTagFile::__anon3	file:
+info	ext/tags/tags_ext.h	/^    tagFileInfo info;$/;"	m	struct:__anon1
+init_symbols	ext/tags/tags_file.c	/^static void init_symbols()$/;"	f	file:
+initialize	ext/tags/vendor/readtags.c	/^static tagFile *initialize (const char *const filePath, tagFileInfo *const info)$/;"	f	file:
+initialize	lib/tags/file.rb	/^    def initialize(filename)$/;"	f	class:Tags.File
+initialized	ext/tags/vendor/readtags.c	/^	short initialized;$/;"	m	struct:sTagFile	file:
+key	ext/tags/vendor/readtags.h	/^	const char *key;$/;"	m	struct:__anon12
+kind	ext/tags/vendor/readtags.h	/^	const char *kind;$/;"	m	struct:__anon13
+last_result	ext/tags/tags_ext.h	/^    tagResult last_result;$/;"	m	struct:__anon1
+line	ext/tags/vendor/readtags.c	/^	vstring line;$/;"	m	struct:sTagFile	file:
+lineNumber	ext/tags/vendor/readtags.h	/^		unsigned long lineNumber;$/;"	m	struct:__anon13::__anon14
+list	ext/tags/vendor/readtags.c	/^			tagExtensionField *list;$/;"	m	struct:sTagFile::__anon4	file:
+list	ext/tags/vendor/readtags.h	/^		tagExtensionField *list;$/;"	m	struct:__anon13::__anon15
+listTags	ext/tags/vendor/readtags.c	/^static void listTags (void)$/;"	f	file:
+main	ext/tags/vendor/readtags.c	/^extern int main (int argc, char **argv)$/;"	f
+max	ext/tags/vendor/readtags.c	/^			unsigned short max;$/;"	m	struct:sTagFile::__anon4	file:
+name	ext/tags/vendor/readtags.c	/^			char *name;$/;"	m	struct:sTagFile::__anon3	file:
+name	ext/tags/vendor/readtags.c	/^		char *name;$/;"	m	struct:sTagFile::__anon5	file:
+name	ext/tags/vendor/readtags.c	/^	vstring name;$/;"	m	struct:sTagFile	file:
+name	ext/tags/vendor/readtags.h	/^		const char *name;$/;"	m	struct:__anon8::__anon11
+name	ext/tags/vendor/readtags.h	/^	const char *name;$/;"	m	struct:__anon13
+nameComparison	ext/tags/vendor/readtags.c	/^static int nameComparison (tagFile *const file)$/;"	f	file:
+nameLength	ext/tags/vendor/readtags.c	/^			size_t nameLength;$/;"	m	struct:sTagFile::__anon3	file:
+opened	ext/tags/vendor/readtags.h	/^		int opened;$/;"	m	struct:__anon8::__anon9
+option_or_default_int	ext/tags/tags_file.c	/^static inline int option_or_default_int(VALUE hash, const char* name, int default_val)$/;"	f	file:
+parseExtensionFields	ext/tags/vendor/readtags.c	/^static void parseExtensionFields (tagFile *const file, tagEntry *const entry,$/;"	f	file:
+parseTagLine	ext/tags/vendor/readtags.c	/^static void parseTagLine (tagFile *file, tagEntry *const entry)$/;"	f	file:
+partial	ext/tags/vendor/readtags.c	/^			short partial;$/;"	m	struct:sTagFile::__anon3	file:
+pattern	ext/tags/vendor/readtags.h	/^		const char *pattern;$/;"	m	struct:__anon13::__anon14
+pos	ext/tags/vendor/readtags.c	/^			off_t pos; $/;"	m	struct:sTagFile::__anon3	file:
+pos	ext/tags/vendor/readtags.c	/^	off_t pos;$/;"	m	struct:sTagFile	file:
+printTag	ext/tags/vendor/readtags.c	/^static void printTag (const tagEntry *entry)$/;"	f	file:
+program	ext/tags/vendor/readtags.c	/^	} program;$/;"	m	struct:sTagFile	typeref:struct:sTagFile::__anon5	file:
+program	ext/tags/vendor/readtags.h	/^	} program;$/;"	m	struct:__anon8	typeref:struct:__anon8::__anon11
+rb_cTags_File	ext/tags/tags_file.c	/^VALUE rb_cTags_File;$/;"	v
+rb_mTags	ext/tags/tags.c	/^VALUE rb_mTags;$/;"	v
+rb_tags_file_allocate	ext/tags/tags_file.c	/^static VALUE rb_tags_file_allocate(VALUE klass)$/;"	f	file:
+rb_tags_file_close	ext/tags/tags_file.c	/^static VALUE rb_tags_file_close(VALUE self)$/;"	f	file:
+rb_tags_file_find_first	ext/tags/tags_file.c	/^static VALUE rb_tags_file_find_first(int argc, VALUE *argv, VALUE self)$/;"	f	file:
+rb_tags_file_find_next	ext/tags/tags_file.c	/^static VALUE rb_tags_file_find_next(VALUE self)$/;"	f	file:
+rb_tags_file_free	ext/tags/tags_file.c	/^static void rb_tags_file_free(tag_file *tags)$/;"	f	file:
+rb_tags_file_init	ext/tags/tags_file.c	/^static VALUE rb_tags_file_init(VALUE self, VALUE tag_file_name)$/;"	f	file:
+rb_tags_file_mark	ext/tags/tags_file.c	/^static void rb_tags_file_mark(tag_file *tags)$/;"	f	file:
+readFieldValue	ext/tags/vendor/readtags.c	/^static const char *readFieldValue ($/;"	f	file:
+readNext	ext/tags/vendor/readtags.c	/^static tagResult readNext (tagFile *const file, tagEntry *const entry)$/;"	f	file:
+readPseudoTags	ext/tags/vendor/readtags.c	/^static void readPseudoTags (tagFile *const file, tagFileInfo *const info)$/;"	f	file:
+readTagLine	ext/tags/vendor/readtags.c	/^static int readTagLine (tagFile *const file)$/;"	f	file:
+readTagLineRaw	ext/tags/vendor/readtags.c	/^static int readTagLineRaw (tagFile *const file)$/;"	f	file:
+readTagLineSeek	ext/tags/vendor/readtags.c	/^static int readTagLineSeek (tagFile *const file, const off_t pos)$/;"	f	file:
+sTagFile	ext/tags/vendor/readtags.c	/^struct sTagFile {$/;"	s	file:
+search	ext/tags/vendor/readtags.c	/^	} search;$/;"	m	struct:sTagFile	typeref:struct:sTagFile::__anon3	file:
+sep	ext/tags/vendor/readtags.c	/^#define sep /;"	d	file:
+sep	ext/tags/vendor/readtags.c	/^#undef sep$/;"	d	file:
+size	ext/tags/vendor/readtags.c	/^	off_t size;$/;"	m	struct:sTagFile	file:
+size	ext/tags/vendor/readtags.c	/^	size_t size;$/;"	m	struct:__anon2	file:
+sort	ext/tags/vendor/readtags.h	/^			sortType sort;$/;"	m	struct:__anon8::__anon10
+sortMethod	ext/tags/vendor/readtags.c	/^	sortType sortMethod;$/;"	m	struct:sTagFile	file:
+sortType	ext/tags/vendor/readtags.h	/^} sortType ;$/;"	t	typeref:enum:__anon6
+status	ext/tags/vendor/readtags.h	/^	} status;$/;"	m	struct:__anon8	typeref:struct:__anon8::__anon9
+strnuppercmp	ext/tags/vendor/readtags.c	/^static int strnuppercmp (const char *s1, const char *s2, size_t n)$/;"	f	file:
+struppercmp	ext/tags/vendor/readtags.c	/^static int struppercmp (const char *s1, const char *s2)$/;"	f	file:
+sym_ext	ext/tags/tags_file.c	/^static VALUE sym_name, sym_file, sym_line_pattern, sym_line_number, sym_kind, sym_file_scope, sym_ext;$/;"	v	file:
+sym_file	ext/tags/tags_file.c	/^static VALUE sym_name, sym_file, sym_line_pattern, sym_line_number, sym_kind, sym_file_scope, sym_ext;$/;"	v	file:
+sym_file_scope	ext/tags/tags_file.c	/^static VALUE sym_name, sym_file, sym_line_pattern, sym_line_number, sym_kind, sym_file_scope, sym_ext;$/;"	v	file:
+sym_kind	ext/tags/tags_file.c	/^static VALUE sym_name, sym_file, sym_line_pattern, sym_line_number, sym_kind, sym_file_scope, sym_ext;$/;"	v	file:
+sym_line_number	ext/tags/tags_file.c	/^static VALUE sym_name, sym_file, sym_line_pattern, sym_line_number, sym_kind, sym_file_scope, sym_ext;$/;"	v	file:
+sym_line_pattern	ext/tags/tags_file.c	/^static VALUE sym_name, sym_file, sym_line_pattern, sym_line_number, sym_kind, sym_file_scope, sym_ext;$/;"	v	file:
+sym_name	ext/tags/tags_file.c	/^static VALUE sym_name, sym_file, sym_line_pattern, sym_line_number, sym_kind, sym_file_scope, sym_ext;$/;"	v	file:
+tagEntry	ext/tags/vendor/readtags.h	/^} tagEntry;$/;"	t	typeref:struct:__anon13
+tagExtensionField	ext/tags/vendor/readtags.h	/^} tagExtensionField;$/;"	t	typeref:struct:__anon12
+tagFile	ext/tags/vendor/readtags.h	/^typedef struct sTagFile tagFile;$/;"	t	typeref:struct:sTagFile
+tagFileInfo	ext/tags/vendor/readtags.h	/^} tagFileInfo;$/;"	t	typeref:struct:__anon8
+tagResult	ext/tags/vendor/readtags.h	/^typedef enum { TagFailure = 0, TagSuccess = 1 } tagResult;$/;"	t	typeref:enum:__anon7
+tag_file	ext/tags/tags_ext.h	/^} tag_file;$/;"	t	typeref:struct:__anon1
+tagsClose	ext/tags/vendor/readtags.c	/^extern tagResult tagsClose (tagFile *const file)$/;"	f
+tagsField	ext/tags/vendor/readtags.c	/^extern const char *tagsField (const tagEntry *const entry, const char *const key)$/;"	f
+tagsFind	ext/tags/vendor/readtags.c	/^extern tagResult tagsFind (tagFile *const file, tagEntry *const entry,$/;"	f
+tagsFindNext	ext/tags/vendor/readtags.c	/^extern tagResult tagsFindNext (tagFile *const file, tagEntry *const entry)$/;"	f
+tagsFirst	ext/tags/vendor/readtags.c	/^extern tagResult tagsFirst (tagFile *const file, tagEntry *const entry)$/;"	f
+tagsNext	ext/tags/vendor/readtags.c	/^extern tagResult tagsNext (tagFile *const file, tagEntry *const entry)$/;"	f
+tagsOpen	ext/tags/vendor/readtags.c	/^extern tagFile *tagsOpen (const char *const filePath, tagFileInfo *const info)$/;"	f
+tagsSetSortType	ext/tags/vendor/readtags.c	/^extern tagResult tagsSetSortType (tagFile *const file, const sortType type)$/;"	f
+terminate	ext/tags/vendor/readtags.c	/^static void terminate (tagFile *const file)$/;"	f	file:
+test_simple_compare	test/tags_file_test.rb	/^  def test_simple_compare$/;"	f	class:TagsFileTest
+test_truth	test/tags_ext_test.rb	/^  def test_truth$/;"	f	class:TagsExtnTest
+url	ext/tags/vendor/readtags.c	/^		char *url;$/;"	m	struct:sTagFile::__anon5	file:
+url	ext/tags/vendor/readtags.h	/^		const char *url;$/;"	m	struct:__anon8::__anon11
+value	ext/tags/vendor/readtags.h	/^	const char *value;$/;"	m	struct:__anon12
+version	ext/tags/vendor/readtags.c	/^		char *version;$/;"	m	struct:sTagFile::__anon5	file:
+version	ext/tags/vendor/readtags.h	/^		const char *version;$/;"	m	struct:__anon8::__anon11
+vstring	ext/tags/vendor/readtags.c	/^} vstring;$/;"	t	typeref:struct:__anon2	file:

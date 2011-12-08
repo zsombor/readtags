@@ -1,0 +1,12 @@
+./TAGS
+.DS_Store
+.DS_store
+notes.txt
+*~
+*.\#*
+*.rbc
+.bundle
+.directory
+lib/tags/tags.bundle
+tmp
+vendor/tags/build
