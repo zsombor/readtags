@@ -45,8 +45,8 @@ class TagsFileTest < Test::Unit::TestCase
                    :line_pattern=>"/^\tconst char *name;$/",
                    :line_number=>0,
                    :kind=>"m",
-                   :ext=>{"struct"=>"__anon13"}
-                 }, results[4])
+                   :ext=>{"struct"=>"__anon13"}},
+                 results[4])
     assert_equal 5, results.size
   end
 
