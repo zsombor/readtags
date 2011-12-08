@@ -1,5 +1,7 @@
 module Tags
   class File
+    include Enumerable
+
     def each(name, options = { }, &block)
       res = find_first(name, options)
       while res && !res.empty?
