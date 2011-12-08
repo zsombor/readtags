@@ -113,13 +113,14 @@ static VALUE rb_tags_file_find_first(int argc, VALUE *argv, VALUE self)
         options = rb_hash_new();
     }
 
+    tags->flags = 0;
     if(Qtrue == option_or_default_int(options, "full_match", Qtrue))
         tags->flags |= TAG_FULLMATCH;
-    if(Qtrue == option_or_default_int(options, "partial_match", Qtrue))
+    if(Qtrue == option_or_default_int(options, "partial_match", Qfalse))
         tags->flags |= TAG_PARTIALMATCH;
     if(Qtrue == option_or_default_int(options, "observe_case", Qtrue))
         tags->flags |= TAG_OBSERVECASE;
-    if(Qtrue == option_or_default_int(options, "ignore_case", Qtrue))
+    if(Qtrue == option_or_default_int(options, "ignore_case", Qfalse))
         tags->flags |= TAG_IGNORECASE;
 
     tags->last_result = tagsFind(tags->file, &tags->entry, StringValueCStr(name), tags->flags);
