@@ -132,7 +132,7 @@ static VALUE rb_tags_file_find_next(VALUE self)
     Data_Get_Struct(self, tag_file, tags);
 
     if(TagSuccess == tags->last_result)
-        tagsFindNext(tags->file, &tags->entry);
+        tags->last_result = tagsFindNext(tags->file, &tags->entry);
     return format_tag_entry(tags);
 }
 
