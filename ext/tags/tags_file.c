@@ -26,14 +26,11 @@ static VALUE rb_tags_file_allocate(VALUE klass)
 }
 
 
-static inline int option_or_default_int(VALUE hash, const char* name, int default_val)
+static inline int option_or_default_value(VALUE hash, const char* name, int default_val)
 {
     VALUE rb_value;
     rb_value = rb_hash_aref(hash, ID2SYM(rb_intern(name)));
-    if(FIXNUM_P(rb_value)) {
-        return NUM2INT(rb_value);
-    }
-    return default_val;
+    return (rb_value == Qnil ? default_val : rb_value);
 }
 
 
@@ -114,13 +111,13 @@ static VALUE rb_tags_file_find_first(int argc, VALUE *argv, VALUE self)
     }
 
     tags->flags = 0;
-    if(Qtrue == option_or_default_int(options, "full_match", Qtrue))
+    if(Qtrue == option_or_default_value(options, "full_match", Qtrue))
         tags->flags |= TAG_FULLMATCH;
-    if(Qtrue == option_or_default_int(options, "partial_match", Qfalse))
+    if(Qtrue == option_or_default_value(options, "partial_match", Qfalse))
         tags->flags |= TAG_PARTIALMATCH;
-    if(Qtrue == option_or_default_int(options, "observe_case", Qtrue))
+    if(Qtrue == option_or_default_value(options, "observe_case", Qtrue))
         tags->flags |= TAG_OBSERVECASE;
-    if(Qtrue == option_or_default_int(options, "ignore_case", Qfalse))
+    if(Qtrue == option_or_default_value(options, "ignore_case", Qfalse))
         tags->flags |= TAG_IGNORECASE;
 
     tags->last_result = tagsFind(tags->file, &tags->entry, StringValueCStr(name), tags->flags);
