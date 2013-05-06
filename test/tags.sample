@@ -4,6 +4,8 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+DB8500_PRCM_LINE_VALUE	include/linux/mfd/db8500-prcmu.h	19;"	d
+DB8500_PRCM_LINE_VALUE_HSI_CAWAKE0	include/linux/mfd/db8500-prcmu.h	20;"	d
 EmptyString	ext/tags/vendor/readtags.c	/^const char *const EmptyString = "";$/;"	v
 File	lib/tags/file.rb	/^  class File$/;"	c	class:Tags
 Init_readtags	ext/tags/tags.c	/^void Init_readtags()$/;"	f

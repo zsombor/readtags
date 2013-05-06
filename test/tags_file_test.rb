@@ -12,7 +12,6 @@ class TagsFileTest < Test::Unit::TestCase
     assert_equal({ :name=>"name",
                    :file=>"ext/tags/vendor/readtags.c",
                    :line_pattern=>"/^\t\t\tchar *name;$/",
-                   :line_number=>0,
                    :kind=>"m",
                    :file_scope=>true,
                    :ext=>{"struct"=>"sTagFile::__anon3"}},
@@ -20,7 +19,6 @@ class TagsFileTest < Test::Unit::TestCase
     assert_equal({ :name=>"name",
                    :file=>"ext/tags/vendor/readtags.c",
                    :line_pattern=>"/^\t\tchar *name;$/",
-                   :line_number=>0,
                    :kind=>"m",
                    :file_scope=>true,
                    :ext=>{"struct"=>"sTagFile::__anon5"}},
@@ -28,7 +26,6 @@ class TagsFileTest < Test::Unit::TestCase
     assert_equal({ :name=>"name",
                    :file=>"ext/tags/vendor/readtags.c",
                    :line_pattern=>"/^\tvstring name;$/",
-                   :line_number=>0,
                    :kind=>"m",
                    :file_scope=>true,
                    :ext=>{"struct"=>"sTagFile"}},
@@ -36,14 +33,12 @@ class TagsFileTest < Test::Unit::TestCase
     assert_equal({ :name=>"name",
                    :file=>"ext/tags/vendor/readtags.h",
                    :line_pattern=>"/^\t\tconst char *name;$/",
-                   :line_number=>0,
                    :kind=>"m",
                    :ext=>{"struct"=>"__anon8::__anon11"}},
                  results[3])
     assert_equal({ :name=>"name",
                    :file=>"ext/tags/vendor/readtags.h",
                    :line_pattern=>"/^\tconst char *name;$/",
-                   :line_number=>0,
                    :kind=>"m",
                    :ext=>{"struct"=>"__anon13"}},
                  results[4])
@@ -60,5 +55,23 @@ class TagsFileTest < Test::Unit::TestCase
     end
     assert results.size >= 5
   end
+
+
+  def test_entry_with_line_number
+    results = []
+    Tags::File.open(File.dirname(__FILE__) + '/tags.sample') do |f|
+      f.each('DB8500_PRCM_LINE_VALUE') do |res|
+        results << res
+      end
+    end
+    assert_equal 1, results.size
+    assert_equal({ name: "DB8500_PRCM_LINE_VALUE",
+                   file: "include/linux/mfd/db8500-prcmu.h",
+                   line_number: 19,
+                   kind: "d",
+                   ext:{}}, results[0])
+  end
+
+
 
 end

@@ -75,9 +75,22 @@ static VALUE format_tag_entry(tag_file *tags)
         rb_hash_aset(result, sym_name, rb_str_new2(tags->entry.name));
         rb_hash_aset(result, sym_file, rb_str_new2(tags->entry.file));
 
-        if(tags->entry.address.pattern)
-            rb_hash_aset(result, sym_line_pattern, rb_str_new2(tags->entry.address.pattern));
-        rb_hash_aset(result, sym_line_number, INT2FIX(tags->entry.address.lineNumber));
+
+        /* if has a line number then the pattern is useless repetition
+         * of the linenumber, send only the linenumber back. */
+        if(tags->entry.address.lineNumber > 0){
+            rb_hash_aset(result, sym_line_number, INT2FIX(tags->entry.address.lineNumber));
+        } else {
+            /* if linenumber is 0 then don't send it back as it is
+             * meaningless anyway. Check for a pattern and return it
+             * if any instead. */
+            if(tags->entry.address.pattern) {
+                rb_hash_aset(result, sym_line_pattern, rb_str_new2(tags->entry.address.pattern));
+            }
+        }
+
+
+
 
         rb_hash_aset(result, sym_kind, rb_str_new2(tags->entry.kind));
 
