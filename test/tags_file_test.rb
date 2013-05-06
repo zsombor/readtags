@@ -50,4 +50,15 @@ class TagsFileTest < Test::Unit::TestCase
     assert_equal 5, results.size
   end
 
+
+  def test_find_partial_match
+    results = []
+    Tags::File.open(File.dirname(__FILE__) + '/tags.sample') do |f|
+      f.each('na', partial_match: true) do |res|
+        results << res
+      end
+    end
+    assert results.size >= 5
+  end
+
 end
